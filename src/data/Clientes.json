@@ -1,0 +1,132 @@
+[
+  {
+    "Potential Id": 377149000001294460,
+    "Nombre": "Garia Clínica Dental",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Garia Clínica Dental",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001294340,
+    "Nombre": "Dental Klinic",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Dental Klinic",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001282800,
+    "Nombre": "Clínica Dental Atlántico",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Clínica Dental Atlántico",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001282700,
+    "Nombre": "Quintana López Clínica Dental",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Quintana López Clínica Dental",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001282500,
+    "Nombre": "Dr. Luis Ojeda",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Dr. Luis Ojeda",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001282370,
+    "Nombre": "Salud Dental Canarias",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Salud Dental Canarias",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001282200,
+    "Nombre": "Clínica Dental Castrillo",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Clínica Dental Castrillo",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001282050,
+    "Nombre": "IE Clínica Dental",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "IE Clínica Dental",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001280900,
+    "Nombre": "Clínica Dental Sueca",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Clínica Dental Sueca",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001280700,
+    "Nombre": "Navarro Clínica Dental",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Navarro Clínica Dental",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001280500,
+    "Nombre": "Clínica Dental María José Fernández Reyes",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Clínica Dental María José Fernández Reyes",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  },
+  {
+    "Potential Id": 377149000001280400,
+    "Nombre": "Clínica LED Vecindario",
+    "Cantidad": 3000,
+    "Etapa": "En definición",
+    "Nombre de la cuenta": "Clínica LED Vecindario",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 10,
+    "Ingresos esperados": 300
+  },
+  {
+    "Potential Id": 377149000001277630,
+    "Nombre": "Clínica Dental Alemán",
+    "Cantidad": 3000,
+    "Etapa": "Cerrado ganado",
+    "Nombre de la cuenta": "Clínica Dental Alemán",
+    "Pipeline": "Ciclo Venta 1",
+    "Probabilidad": 100,
+    "Ingresos esperados": 3000
+  }
+]
