@@ -8,6 +8,17 @@ import { BiGift, BiGroup } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
 
+const links = {
+  "pizquitolearn@yahoo.com":
+    "https://accounts.zoho.eu/signin?servicename=ZohoOne&newtheme=true&serviceurl=https%3A%2F%2Fone.zoho.eu%2Fzohoone%2Fpizquito147%2Fhome%2Fcxapp%2Fcrm%2Forg20090852553%2Ftab%2FHome%2Fbegin&signupurl=https%3A%2F%2Fwww.zoho.eu%2Fone%2Fsignup.html",
+  "techpropertiescrm@mail.com":
+    "https://accounts.zoho.eu/signin?servicename=ZohoOne&newtheme=true&serviceurl=https%3A%2F%2Fone.zoho.eu%2Fzohoone%2Ftechproperties%2Fhome%2Fcxapp%2Fcrm%2Forg20090932902%2Ftab%2FHome%2Fbegin&signupurl=https%3A%2F%2Fwww.zoho.eu%2Fone%2Fsignup.html",
+  "uprealsales@mail.com":
+    "https://accounts.zoho.eu/signin?servicename=ZohoOne&newtheme=true&serviceurl=https%3A%2F%2Fone.zoho.eu%2Fzohoone%2Fuprealdigital%2Fhome%2Fcxapp%2Fcrm%2Forg20090919859%2Ftab%2FHome%2Fbegin&signupurl=https%3A%2F%2Fwww.zoho.eu%2Fone%2Fsignup.html",
+  "antaradevelopers@yahoo.com":
+    "https://accounts.zoho.eu/signin?servicename=ZohoOne&newtheme=true&serviceurl=https%3A%2F%2Fone.zoho.eu%2Fzohoone%2Fantara%2Fhome%2Fcxapp%2Fcrm%2Forg20088012946%2Ftab%2FHome%2Fbegin&signupurl=https%3A%2F%2Fwww.zoho.eu%2Fone%2Fsignup.html",
+};
+
 const Dropdown = (props) => {
   return (
     <div className=" h-screen w-[380px] shadow-xl z-10 ">
@@ -163,7 +174,7 @@ function Navbar() {
                 <br />
                 <a
                   className="flex justify-center items-center mb-8 w-[80%] h-[38px] bg-[#1991eb] hover:bg-[#4994eb] text-white rounded-sm"
-                  href="https://one.zoho.eu/zohoone/antara/home/cxapp/crm/org20088012946/tab/Home/begin"
+                  href={links[user.email]}
                   target="_blank"
                 >
                   Continuar

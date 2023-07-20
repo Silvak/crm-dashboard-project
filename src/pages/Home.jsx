@@ -7,6 +7,7 @@ import Sidebar from "../components/Sidebar";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { v4 } from "uuid";
+import Renewal from "../components/Renewal";
 
 //
 import { BsArrowLeftShort, BsBorderAll, BsChevronDown } from "react-icons/bs";
@@ -60,10 +61,11 @@ function Home() {
 
   if (loading) {
     return <Loading />;
-  }
+  } //
   return (
     <>
       <Navbar />
+      <Renewal />
       <div className="flex">
         <div
           className={`fixed sm:relative bg-gradient-to-b from-[#2A4564] to-[#141E30] shadow-lg   ${
