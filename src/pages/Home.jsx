@@ -26,7 +26,7 @@ import { IoMdArrowDropleft } from "react-icons/io";
 export const Menus = [
   { title: "Tablero", icon: <MdDashboard />, url: "dashboard" },
   { title: "Datos", icon: <RiTableFill />, url: "table" },
-  // { title: "Cargar", icon: <RiFileUploadFill />, url: "upload" }, // <<<<<<<<<<<<<<<<<
+  //{ title: "Cargar", icon: <RiFileUploadFill />, url: "upload" }, // <<<<<<<<<<<<<<<<<
   //{ title: "Cuentas", icon: <BsBorderAll />, spacing: true },
   /*
   {
@@ -65,7 +65,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Renewal />
+      {/* <Renewal />  */}
       <div className="flex">
         <div
           className={`fixed sm:relative bg-gradient-to-b from-[#2A4564] to-[#141E30] shadow-lg   ${

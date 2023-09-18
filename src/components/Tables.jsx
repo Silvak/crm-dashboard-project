@@ -13,9 +13,9 @@ const TableInvoices = (props) => {
     <div className="sm:col-span-4 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm">
       <div className="w-full h-full overflow-y-hidden">
         <Table
-          fields={fieldFilter([1, 6, 8, 9, 10])}
+          fields={fieldFilter([1, 6, 8, 10])}
           rows={10}
-          data={dataFilter([10, 9, 8, 6, 1])}
+          data={dataFilter([10, 8, 6, 1])}
         />
       </div>
     </div>
