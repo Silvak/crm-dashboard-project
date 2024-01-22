@@ -4,8 +4,6 @@
 
 - **@vitejs/plugin-react:**
   - Utilizes Babel for Fast Refresh.
-- **@vitejs/plugin-react-swc:**
-  - Uses SWC for Fast Refresh.
 
 ## Getting Started
 
