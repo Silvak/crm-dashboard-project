@@ -65,7 +65,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      {/* <Renewal />  */}
+      <Renewal /> {/* <Renewal />   <<<<<<<<<< pop up - renewal */}
       <div className="flex">
         <div
           className={`fixed sm:relative bg-gradient-to-b from-[#2A4564] to-[#141E30] shadow-lg   ${
