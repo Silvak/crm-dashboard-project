@@ -26,7 +26,7 @@ import { IoMdArrowDropleft } from "react-icons/io";
 export const Menus = [
   { title: "Tablero", icon: <MdDashboard />, url: "dashboard" },
   { title: "Datos", icon: <RiTableFill />, url: "table" },
-  //{ title: "Cargar", icon: <RiFileUploadFill />, url: "upload" }, // <<<<<<<<<<<<<<<<<
+  { title: "Cargar", icon: <RiFileUploadFill />, url: "upload" }, // <<<<<<<<<<<<<<<<<
   //{ title: "Cuentas", icon: <BsBorderAll />, spacing: true },
   /*
   {
@@ -76,7 +76,7 @@ function Home() {
             onClick={handleOpen}
             className={`${
               !open ? "rotate-180 rounded-l-[3px]" : "rounded-r-[3px]"
-            }  absolute  h-[32px]  w-[12px] -right-[12px] -mt-[20px] top-[50%] bg-white text-[#BBB]  text-2xl border cursor-pointer border-[#BBB] `}
+            }  absolute  h-[32px]  w-[20px] -right-[20px] -mt-[20px] top-[50%] bg-white text-[#BBB]  text-2xl border cursor-pointer border-[#BBB] `}
           />
           <div className="flex h-[16px] w-full"> </div>
           <ul className="pt-2">
@@ -190,7 +190,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="fixed  sm:relative h-screen w-[100%]  pl-[72px] pr-4 sm:px-[30px]  pt-[78px] pb-[30px] overflow-x-hidden">
+        <div className="relative fixed  sm:relative h-screen w-[100%]  pl-[72px] pr-4 sm:px-[30px]  pt-[78px] pb-[30px] overflow-x-hidden">
           <Outlet />
         </div>
       </div>

@@ -14,21 +14,37 @@ const useFilter = (data) => {
   };
 
   const dataFilter = (fieldNumber) => {
-    // this function return an array of objects with the fields that you want
-    let dataFiltered = [];
-    let listOfKeys = Object.keys(data[0]);
-    // sort the array of objects
-    data.map((item) => {
-      dataFiltered.push(
-        Object.keys(item).reduce((acc, key) => {
-          if (fieldNumber.includes(Object.keys(item).indexOf(key))) {
-            acc[key] = item[key];
-          }
-          return acc;
-        }, {})
-      );
+    if (!data || data.length === 0) return [];
+
+    const listOfKeys = Object.keys(data[0]);
+
+    // Detectar campo de fecha automáticamente
+    const dateField = listOfKeys.find((key) => {
+      const sampleValue = data[0][key];
+      const date = new Date(sampleValue);
+      return !isNaN(date.getTime()); // true si es fecha válida
     });
-    return dataFiltered; // resutl -> [{a: "a", b: "b", ...}]
+
+    let sortedData = [...data];
+
+    // Si se detecta un campo de fecha, ordenar
+    if (dateField) {
+      sortedData.sort(
+        (a, b) => new Date(b[dateField]) - new Date(a[dateField])
+      );
+    }
+
+    // Filtrar campos seleccionados
+    const dataFiltered = sortedData.map((item) =>
+      Object.keys(item).reduce((acc, key) => {
+        if (fieldNumber.includes(listOfKeys.indexOf(key))) {
+          acc[key] = item[key];
+        }
+        return acc;
+      }, {})
+    );
+
+    return dataFiltered;
   };
 
   const graphFilter = (fieldNumber) => {

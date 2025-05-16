@@ -43,8 +43,9 @@ export const data = {
 //###############################################################################
 const TablePedidos = (props) => {
   const { fieldFilter, dataFilter } = props.dataFilter;
+
   return (
-    <div className="sm:col-span-4 lg:col-span-2 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm">
+    <div className="sm:col-span-4 lg:col-span-2 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
       <h3 className="text-xl w-full text-center mb-4 text-gray-500">
         Tratos con clientes{" "}
       </h3>
@@ -64,7 +65,7 @@ const TableFacutras = (props) => {
   const { fieldFilter, dataFilter } = props.dataFilter;
 
   return (
-    <div className="sm:col-span-4 lg:col-span-2 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm">
+    <div className="sm:col-span-4 lg:col-span-2 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
       <h3 className="text-xl w-full text-center mb-4 text-gray-500">
         Presupuestos
       </h3>
@@ -175,32 +176,32 @@ function Dashboard() {
         <h3 className="text-lg w-full text-gray-500">Estadisticas</h3>
       </div>
 
-      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#ff9526]">
+      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#ff9526] overflow-hidden">
         <h4 className="text-sm w-full text-gray-500">Potenciales</h4>
-        <p className="text-md font-bold text-gray-600 ">
+        <p className="text-xl font-bold text-gray-600 ">
           {dataInvoicesD.length}
         </p>
       </div>
 
-      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#1991eb]">
+      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#1991eb] overflow-hidden">
         <h4 className="text-sm w-full text-gray-500">Conversión</h4>
-        <p className="text-md font-bold text-gray-600 ">
+        <p className="text-xl font-bold text-gray-600 ">
           {(a / dataClients.length).toFixed(2)}%
         </p>
       </div>
 
-      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#627282]">
+      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#627282] overflow-hidden">
         <h4 className="text-sm w-full text-gray-500">
           Promedio <strong>n</strong>
         </h4>
-        <p className="text-md font-bold text-gray-600 ">
+        <p className="text-xl font-bold text-gray-600 ">
           €{(b / dataClients.length).toFixed(2)}
         </p>
       </div>
 
-      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#14b474]">
+      <div className="flex justify-start items-center sm:col-span-2 lg:col-span-1 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#14b474] overflow-hidden">
         <h4 className="text-sm w-full text-gray-500">Facturados</h4>
-        <p className="text-md font-bold text-gray-600 ">{dataClients.length}</p>
+        <p className="text-xl font-bold text-gray-600 ">{dataClients.length}</p>
       </div>
 
       <TablePedidos dataFilter={myDataFilter(dataInvoicesD)} />

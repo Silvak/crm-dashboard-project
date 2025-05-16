@@ -10,14 +10,12 @@ import Loading from "./Loading";
 const TableInvoices = (props) => {
   const { fieldFilter, dataFilter } = props.dataFilter;
   return (
-    <div className="sm:col-span-4 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm">
-      <div className="w-full h-full overflow-y-hidden">
-        <Table
-          fields={fieldFilter([1, 6, 8, 10])}
-          rows={10}
-          data={dataFilter([10, 8, 6, 1])}
-        />
-      </div>
+    <div className="flex flex-col sm:col-span-4 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
+      <Table
+        fields={fieldFilter([1, 6, 8, 10])}
+        rows={10}
+        data={dataFilter([10, 8, 6, 1])}
+      />
     </div>
   );
 };
@@ -51,22 +49,21 @@ function Tables() {
   }
   return (
     <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
-      <div className="sm:col-span-4 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#f47b87]">
+      <div className="sm:col-span-4 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm border-l-4 border-l-[#f47b87]">
         <h3 className="text-2xl w-full text-gray-500">
           Clientes más probables
         </h3>
       </div>
-      <div className="sm:col-span-4 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm">
-        <div className="w-full h-full overflow-y-hidden">
-          <Table
-            fields={fieldFilter([5, 7, 10, 19, 22])}
-            rows={10}
-            data={dataFilter([22, 19, 10, 7, 5])}
-          />
-        </div>
+
+      <div className="flex flex-col sm:col-span-4 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
+        <Table
+          fields={fieldFilter([5, 7, 10, 19, 22])}
+          rows={10}
+          data={dataFilter([22, 19, 10, 7, 5])}
+        />
       </div>
 
-      <div className="sm:col-span-4 mt-16 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm border-l-4 border-l-[#f47b87]">
+      <div className="sm:col-span-4 mt-16 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm border-l-4 border-l-[#f47b87]">
         <h3 className="text-2xl w-full text-gray-500">
           Tratos con conversión más probable
         </h3>

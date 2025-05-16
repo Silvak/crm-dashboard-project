@@ -23,23 +23,33 @@ function Table(props) {
 
   return (
     <>
-      <table className="table w-full rounded-lg border-separate border-spacing-y-0 text-sm">
-        <thead className="">
-          <tr className="text-center h-[32px]">
+      <div className="grid w-full overflow-x-auto">
+        <div className="flex flex-col w-full">
+          <div
+            className="grid  font-semibold px-2 rounded-md bg-gray-200 h-[52px]"
+            style={{
+              gridTemplateColumns: `repeat(${fields.length}, 1fr)`,
+            }}
+          >
             {fields.map((field, index) => (
-              <th className="text-[12px]" key={index}>
+              <div
+                className="flex items-center h-full text-[12px]  text-nowrap"
+                key={field + index}
+              >
                 {field}
-              </th>
+              </div>
             ))}
-          </tr>
-        </thead>
-        <tbody className={style.tr}>
-          {pageData.map((item, index) => (
-            <TableRow item={item} key={index} />
-          ))}
-        </tbody>
-      </table>
-      <div className="my-6">
+          </div>
+
+          <div className="flex flex-col w-full">
+            {pageData.map((item, index) => (
+              <TableRow item={item} key={index} index={index} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4">
         <TablePagination {...pagination} />
       </div>
     </>
