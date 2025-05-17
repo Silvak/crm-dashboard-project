@@ -47,13 +47,13 @@ const TablePedidos = (props) => {
   return (
     <div className="sm:col-span-4 lg:col-span-2 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
       <h3 className="text-xl w-full text-center mb-4 text-gray-500">
-        Tratos con clientes{" "}
+        Posibles Clientes
       </h3>
       <div className=" w-[100%] mt-4">
         <Table
-          fields={fieldFilter([7, 19])}
+          fields={fieldFilter([3, 8])}
           rows={4}
-          data={dataFilter([7, 19])}
+          data={dataFilter([3, 8])}
         />
       </div>
     </div>
@@ -67,13 +67,13 @@ const TableFacutras = (props) => {
   return (
     <div className="sm:col-span-4 lg:col-span-2 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
       <h3 className="text-xl w-full text-center mb-4 text-gray-500">
-        Presupuestos
+        Tratos con clientes
       </h3>
       <div className=" w-[100%] mt-4">
         <Table
-          fields={fieldFilter([3, 16])}
+          fields={fieldFilter([3, 4])}
           rows={4}
-          data={dataFilter([3, 16])}
+          data={dataFilter([4, 3])}
         />
       </div>
     </div>
@@ -163,7 +163,12 @@ function Dashboard() {
 
   //const { fieldFilter, dataFilter, graphFilter } = myDataFilter(dataInvoicesD);
 
-  if (dataClients.length === 0 || dataInvoicesD.length === 0) {
+  if (
+    dataClients.length === 0 ||
+    dataInvoicesD.length === 0 ||
+    dataFacturas.length === 0 ||
+    posiblesClientes.length === 0
+  ) {
     return <Loading />;
   }
   return (
@@ -204,7 +209,8 @@ function Dashboard() {
         <p className="text-xl font-bold text-gray-600 ">{dataClients.length}</p>
       </div>
 
-      <TablePedidos dataFilter={myDataFilter(dataInvoicesD)} />
+      {/*<TablePedidos dataFilter={myDataFilter(dataInvoicesD)} /> */}
+      <TablePedidos dataFilter={myDataFilter(posiblesClientes)} />
       <TableFacutras dataFilter={myDataFilter(dataClients)} />
 
       <div className="sm:col-span-4 bg-white rounded-[5px] px-[20px] py-[15px] border border-gray-300 shadow-sm">

@@ -18,27 +18,38 @@ const useFilter = (data) => {
 
     const listOfKeys = Object.keys(data[0]);
 
-    // Detectar campo de fecha automáticamente
-    const dateField = listOfKeys.find((key) => {
+    // Detectar todos los campos que son válidos como fecha
+    const dateFields = listOfKeys.filter((key) => {
       const sampleValue = data[0][key];
-      const date = new Date(sampleValue);
-      return !isNaN(date.getTime()); // true si es fecha válida
+      return (
+        typeof sampleValue === "string" &&
+        !isNaN(new Date(sampleValue).getTime())
+      );
     });
 
     let sortedData = [...data];
 
-    // Si se detecta un campo de fecha, ordenar
-    if (dateField) {
+    // Si hay campos de fecha, usar el primero como criterio de orden (descendente)
+    if (dateFields.length > 0) {
+      const mainDateField = dateFields[0];
       sortedData.sort(
-        (a, b) => new Date(b[dateField]) - new Date(a[dateField])
+        (a, b) => new Date(b[mainDateField]) - new Date(a[mainDateField])
       );
     }
 
-    // Filtrar campos seleccionados
+    // Filtrar y formatear los campos seleccionados
     const dataFiltered = sortedData.map((item) =>
-      Object.keys(item).reduce((acc, key) => {
-        if (fieldNumber.includes(listOfKeys.indexOf(key))) {
-          acc[key] = item[key];
+      listOfKeys.reduce((acc, key, index) => {
+        if (fieldNumber.includes(index)) {
+          let value = item[key];
+          // Si el campo es una fecha válida, formatear a solo fecha
+          if (dateFields.includes(key)) {
+            const parsedDate = new Date(value);
+            if (!isNaN(parsedDate.getTime())) {
+              value = parsedDate.toISOString().split("T")[0]; // "YYYY-MM-DD"
+            }
+          }
+          acc[key] = value;
         }
         return acc;
       }, {})

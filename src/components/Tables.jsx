@@ -12,9 +12,9 @@ const TableInvoices = (props) => {
   return (
     <div className="flex flex-col sm:col-span-4 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
       <Table
-        fields={fieldFilter([1, 6, 8, 10])}
+        fields={fieldFilter([4, 8, 10, 11, 17])}
         rows={10}
-        data={dataFilter([10, 8, 6, 1])}
+        data={dataFilter([4, 8, 10, 11, 17])}
       />
     </div>
   );
@@ -27,7 +27,7 @@ function Tables() {
   const { getDataJson } = useGetData();
 
   const getClients = async () => {
-    let json = await getDataJson("Presupuestos.json");
+    let json = await getDataJson("Posibles_clientes.json");
     setDataClients(json);
   };
 
@@ -57,9 +57,9 @@ function Tables() {
 
       <div className="flex flex-col sm:col-span-4 bg-white rounded-[5px] p-4 border border-gray-300 shadow-sm">
         <Table
-          fields={fieldFilter([5, 7, 10, 19, 22])}
+          fields={fieldFilter([2, 3, 8, 24])}
           rows={10}
-          data={dataFilter([22, 19, 10, 7, 5])}
+          data={dataFilter([2, 3, 8, 24])}
         />
       </div>
 

@@ -8,7 +8,7 @@ const TableRow = ({ item, index }) => {
     <div
       className={`rounded-md px-2 py-2 text-[12px] w-full  ${
         isEven ? "bg-white" : "bg-gray-100"
-      } grid min-h-[52px] gap-1`}
+      } grid min-h-[52px] md:max-h-[52px] gap-1`}
       style={{
         gridTemplateColumns: `repeat(${keys.length}, 1fr)`,
       }}

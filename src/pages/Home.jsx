@@ -26,7 +26,7 @@ import { IoMdArrowDropleft } from "react-icons/io";
 export const Menus = [
   { title: "Tablero", icon: <MdDashboard />, url: "dashboard" },
   { title: "Datos", icon: <RiTableFill />, url: "table" },
-  { title: "Cargar", icon: <RiFileUploadFill />, url: "upload" }, // <<<<<<<<<<<<<<<<<
+  //{ title: "Cargar", icon: <RiFileUploadFill />, url: "upload" }, // <<<<<<<<<<<<<<<<<
   //{ title: "Cuentas", icon: <BsBorderAll />, spacing: true },
   /*
   {
@@ -190,7 +190,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="relative fixed  sm:relative h-screen w-[100%]  pl-[72px] pr-4 sm:px-[30px]  pt-[78px] pb-[30px] overflow-x-hidden">
+        <div className="fixed  sm:relative h-screen w-[100%]  pl-[72px] pr-4 sm:px-[30px]  pt-[78px] pb-[30px] overflow-x-hidden">
           <Outlet />
         </div>
       </div>
