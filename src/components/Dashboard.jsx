@@ -51,9 +51,9 @@ const TablePedidos = (props) => {
       </h3>
       <div className=" w-[100%] mt-4">
         <Table
-          fields={fieldFilter([3, 8])}
+          fields={fieldFilter([3, 8, 24])}
           rows={4}
-          data={dataFilter([3, 8])}
+          data={dataFilter([3, 8, 24])}
         />
       </div>
     </div>

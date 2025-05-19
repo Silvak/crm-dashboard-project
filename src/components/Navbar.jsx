@@ -14,7 +14,7 @@ const links = {
   "techpropertiescrm@mail.com":
     "https://accounts.zoho.eu/signin?servicename=ZohoOne&newtheme=true&serviceurl=https%3A%2F%2Fone.zoho.eu%2Fzohoone%2Ftechproperties%2Fhome%2Fcxapp%2Fcrm%2Forg20090932902%2Ftab%2FHome%2Fbegin&signupurl=https%3A%2F%2Fwww.zoho.eu%2Fone%2Fsignup.html",
   "uprealsales@mail.com":
-    "https://accounts.zoho.eu/signin?servicename=ZohoOne&newtheme=true&serviceurl=https%3A%2F%2Fone.zoho.eu%2Fzohoone%2Fuprealdigital%2Fhome%2Fcxapp%2Fcrm%2Forg20090919859%2Ftab%2FHome%2Fbegin&signupurl=https%3A%2F%2Fwww.zoho.eu%2Fone%2Fsignup.html",
+    "https://accounts.zoho.eu/signin?service_language=es&servicename=ZohoCRM&signupurl=https://www.zoho.com/es-xl/crm/signup.html&serviceurl=https%3A%2F%2Fcrm.zoho.com%2Fcrm%2FShowHomePage.do%3Fref_value%3D%252C%252C%252CDesktop%252Chttps%253A%252F%252Fwww.zoho.com%252Fes-xl%252Fcrm%252F",
   "antaradevelopers@yahoo.com":
     "https://accounts.zoho.eu/signin?servicename=ZohoOne&newtheme=true&serviceurl=https%3A%2F%2Fone.zoho.eu%2Fzohoone%2Fantara%2Fhome%2Fcxapp%2Fcrm%2Forg20088012946%2Ftab%2FHome%2Fbegin&signupurl=https%3A%2F%2Fwww.zoho.eu%2Fone%2Fsignup.html",
 };
@@ -62,16 +62,14 @@ const Dropdown = (props) => {
         <div className="flex flex-col items-start justify-center px-[25px] w-full h-[38%] bg-white  text-gray-600 text-[12px]">
           <h4 className="font-bold mb-1">SUSCRIPCIÓN</h4>
           <div className="flex justify-between mb-1 w-full">
-            <p className="w-[70%]">
-              El periodo de prueba de Enterprise caduca en 15 días
-            </p>
+            <p className="w-[70%]">Plan Enterprise</p>
             <p className="w-[20%]">
-              <p className="text-blue-400 w-full text-right cursor-pointer">
+              <p className="hidden text-blue-400 w-full text-right cursor-pointer">
                 ACTUALIZAR
               </p>
             </p>
           </div>
-          <p>Volver a la versión Gratuita</p>
+          <p className="text-gray-300">Volver a la versión Gratuita</p>
         </div>
 
         <div className="flex flex-col gap-4 relative h-[62%] bg-white px-[25px] py-[15px] text-[12px]">
